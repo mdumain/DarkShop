@@ -1,0 +1,19 @@
+.titre h1{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+
+
+}
+.titre h4{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+
+
+}
+
+.titre{
+    background-color: azure;
+    color: rgb(23, 14, 33);
+}
