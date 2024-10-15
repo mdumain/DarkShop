@@ -14,7 +14,7 @@ h2{
 
     display: grid;
     width: 100%;
-    grid-template-columns: 120px 120px;
+    grid-template-columns: 30% 70%;
     align-items: start;
     justify-content: space-between;
 
@@ -24,10 +24,14 @@ h2{
 .noir{
     display: grid;
     width: 100%;
-    grid-template-columns: 120px 120px;
+    grid-template-columns: 50% 120px;
     align-items: start;
     justify-content: space-between;
 }
 
+/* Temporaire */
+div h2{
+    border: 1px solid red;
+}
 
 
