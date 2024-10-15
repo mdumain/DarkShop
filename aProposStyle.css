@@ -4,6 +4,10 @@ body{
     background-color: black;
 }
 
+h2{
+    font-weight: bold;
+}
+
 .rose{
     background-color: #Fe277e;
     color: white;
