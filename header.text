@@ -1,0 +1,9 @@
+<header>
+        <img src="" alt="le logo">
+        <nav>
+            <a href="index.html">Accueil</a>
+            <a href="boutique.html">Boutique</a>
+            <a href="aPropos.html">A propos</a>
+        </nav>
+       <a href=""><img src="" alt="Panier"></a>
+    </header>

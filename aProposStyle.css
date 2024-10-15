@@ -1,4 +1,4 @@
-.html{
+body{
     font-family: sans-serif;
     color: white;
     background-color: black;
@@ -13,6 +13,8 @@
     grid-template-columns: 120px 120px;
     align-items: start;
     justify-content: space-between;
+
+    box-shadow: 2px 2px 2px 1px #Fe277e;
 }
 
 .noir{
@@ -23,8 +25,5 @@
     justify-content: space-between;
 }
 
-.noir h2{
-    text-align:left ;
-}
 
 
