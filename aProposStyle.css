@@ -30,7 +30,7 @@ h2{
 }
 
 /* Temporaire */
-div h2{
+.rose div{
     border: 1px solid red;
 }
 
