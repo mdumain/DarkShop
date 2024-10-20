@@ -29,9 +29,21 @@ h2{
     justify-content: space-between;
 }
 
-/* Temporaire */
-.rose div{
-    border: 1px solid red;
+.noir div{
+    display: flex;
+
 }
 
+.noir img{
+    align-self: flex-end;
+}
+
+/* Temporaire */
+.rose div{
+    border: 1px solid black;
+}
+
+.noir div{
+    border: 1px solid red;
+}
 
