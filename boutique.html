@@ -4,10 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style_shop.css">
+    <script src="js_moment.js"></script> 
     <title>DarkShop</title>
 </head>
 <body>
     <header>
+        <label class="switch">
+            <input type="checkbox" id="dark">
+            <span class="slider"></span>
+        </label>
+        
         <img src="" alt="le logo">
         <nav>
             <a href="index.html">Accueil</a>
@@ -18,63 +24,115 @@
     </header>
 
 
+
     <section class="titre">
     <h1>DarkShop</h1> <br>
     <h4>L'e-shop numéro 1 du marché</h4> </section>
 
-    <section class="lightshop">
-        <div class="figurine">
+    <section id="lightshop">
+        <h3>Figurine</h3>
+        <div id="figurine" class="categorie">
+            <div class="article">
+                <img src="https://touteladeco.com/cdn/shop/files/S96643e4cc4a14f96a1638222c83bf5f5P_480x.webp?v=1713527792" alt="figurine">
+                <h2>Figurine</h2>
+                <p>Des figurines de vos personnages préférés</p>
+                <button>Acheter</button>
+            </div>
+
+                <div class="article">
+                    <img src="https://boutiquemario.fr/55-medium_default/luigi-geant.jpg" alt="figurine">
+                    <h2>Figurine</h2>
+                    <p>Des figurines de vos personnages préférés</p>
+                    <button>Acheter</button>
+    
+                </div>
 
         </div>
-        <div class="bonbon">
+        
+        <h3>Bonbon</h3>
+
+        <div id="bonbon" class="categorie">
 
         </div>
-        <div class="nettoyage">
+        <h3>Nettoyage</h3>
+        <div id="nettoyage" class="categorie">
 
         </div>
-        <div class="jouet">
+        <h3>Jeux</h3>
+        <div id="jouet" class="categorie">
 
         </div>
-        <div class="queue">
+        <h3>Mode</h3>
+        <div id="queue" class="categorie">
 
         </div>
-        <div class="pokemon">
+        <h3>Pokemon</h3>
+        <div id="pokemon" class="categorie">
 
         </div>
-        <div class="voyage">
+        <h3>Voyage</h3>
+        <div id="voyage" class="categorie">
 
         </div>
-        <div class="programmation">
+        <h3>Programmation</h3>
+        <div id="programmation" class="categorie">
 
         </div>
     </section>
 
-    <section class="darkshop">
-        <div class="humain">
+    <section id="darkshop">
+        <h3>Humain</h3>
+        <div id="humain" class="categorie">
 
         </div>
-        <div class="drogue">
+        <h3>Drogue</h3>
+        <div id="drogue" class="categorie">
 
         </div>
-        <div class="tueurgage">
+        <h3>Tueur</h3>
+        <div id="tueurgage" class="categorie">
 
         </div>
-        <div class="arme">
+        <h3>Arme</h3>
+        <div id="arme" class="categorie">
 
         </div>
-        <div class="stalk">
+        <h3>Stalk</h3>
+        <div id="stalk" class="categorie">
 
         </div>
-        <div class="identite">
+        <h3>Identité</h3>
+        <div id="identite" class="categorie">
 
         </div>
-        <div class="disparition">
+        <h3>Disparition</h3>
+        <div id="disparition" class="categorie">
 
         </div>
-        <div class="hack">
+        <h3>Hack</h3>
+        <div id="hack" class="categorie">
             
         </div>
     </section>
     
+    <script>
+
+        const checkbox = document.getElementById('dark');
+        const darkshopSection = document.getElementById('darkshop');
+        const lightshopSection = document.getElementById('lightshop');
+
+        checkbox.addEventListener('change', function() {
+            if (this.checked) {
+                darkshopSection.style.display = 'block'; 
+                lightshopSection.style.display = 'none'; 
+            } else {
+                darkshopSection.style.display = 'none'; 
+                lightshopSection.style.display = 'block'; 
+            }
+        });
+        darkshopSection.style.display = 'none';
+
+    </script>
+
 </body>
 </html>
