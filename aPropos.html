@@ -6,6 +6,9 @@
     <link rel="stylesheet" href="aProposStyle.css">
     <link rel="stylesheet" href="headerStyle.css">
     <link rel="stylesheet" href="footerStyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
     <title>A Propos</title>
 </head>
 <body>
@@ -18,6 +21,10 @@
         </nav>
         <a href=""><img src="login_icone.png" alt="Se connecter" width="50px" lenght="50px"></a>
         <a href=""><img src="shopping_cart.png" alt="Panier" width="50px" lenght="50px"></a>
+        <label class="switch">
+            <input type="checkbox">
+            <span class="slider"></span>
+        </label>
     </header>
     <section>
         <h1>
@@ -106,5 +113,25 @@
         </div>  
         
     </footer>
+
+    <script>
+
+        const checkbox = document.getElementById('dark');
+        const darkshopSection = document.getElementById('darkshop');
+        const lightshopSection = document.getElementById('lightshop');
+
+        checkbox.addEventListener('change', function() {
+            if (this.checked) {
+                document.body.style.backgroundColor = "dark";
+ 
+ 
+            } else {
+                document.body.style.backgroundColor = "white";
+  
+            }
+        });
+        darkshopSection.style.display = 'none';
+
+    </script>
 </body>
 </html>
