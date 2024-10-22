@@ -11,6 +11,15 @@ header{
     width: 150px;
 }
 
+.mck{
+    height: 150px;
+    width: 90px;
+}
+
+#lightshop{
+    display: block;
+}
+
 .switch {
     position: relative;
     display: inline-block;
