@@ -2,6 +2,8 @@
 
 /!\ Site à but purement éducatif pour l'esthétisme /!\
 
+Lien https://mdumain.github.io/DarkShop/
+
 - La page d'accueil a été réalisée par Luca DUSSOL
 - La page de boutique a été réalisée par Mathias DUMAIN
 - La page de panier a été réalisée par Eloi DUPASQUIER
