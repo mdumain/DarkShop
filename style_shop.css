@@ -98,6 +98,11 @@ h3{
 .article{
     margin:50px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 350px;
+    justify-content: center;
     
 }
 .article>button{
@@ -110,4 +115,26 @@ h3{
     border: none;
     cursor: pointer;
     width: 100%;
+}
+
+.categorie span {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#humain img {
+    height : 500px;
+}
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    border-radius: 15px;
+
 }
