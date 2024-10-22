@@ -8,7 +8,7 @@
 <body>
     <header>
         <label class="switch">
-            <input type="checkbox">
+            <input type="checkbox" id="dark">
             <span class="slider"></span>
         </label>
         
@@ -20,65 +20,145 @@
         </nav>
        <a href=""><img src="" alt="Panier"></a>
     </header>
-    <section class="ligne">
-        <div class="part">
-            <span class="z1">
-                1
-            </span>
-            <p>Panier</p>
-        </div>
-        <div class="part">
-            <span class="z2">
-                2
-            </span>
-            <p>Livraison</p>
-        </div>
-        <div class="part">
-            <span class="z1">
-                3
-            </span>
-            <p>Paiement</p>
-        </div>
-        <div class="part">
-            <span class="z2">
-                4
-            </span>
-            <p>Confirmation</p>
-        </div>
+    <section id="lightshop">
+        <section class="ligne">
+            <div class="part">
+                <span class="z1">
+                    1
+                </span>
+                <p>Panier</p>
+            </div>
+            <div class="part">
+                <span class="z2">
+                    2
+                </span>
+                <p>Livraison</p>
+            </div>
+            <div class="part">
+                <span class="z1">
+                    3
+                </span>
+                <p>Paiement</p>
+            </div>
+            <div class="part">
+                <span class="z2">
+                    4
+                </span>
+                <p>Confirmation</p>
+            </div>
+        </section>
+        <section class="bas">
+            <div class="gauche">
+                <img src="triste-removebg-preview.png" alt="bonhomme triste" class="triste">
+                <span>Le panier est vide</span>
+            </div>
+            <div class="droite">
+                <span class="ttre">Récapitulatif</span>
+                <div class="prix">
+                    <span>prix panier</span>
+                    <span>0€</span>
+                </div>
+                <div class="prix">
+                    <span>extras</span>
+                    <span>0€</span>
+                </div>
+                <div class="prix">
+                    <span>Frais de livraison</span>
+                    <span>0€</span>
+                </div>
+                <div class="code">
+                    <textarea name="code promo" id="cp" placeholder="code promo"></textarea>
+                    <a href="#" class="valcode">OK</a>
+                </div>
+                <hr>
+                <div class="prix">
+                    <span class="tt">TOTAL</span>
+                    <span>0€</span>
+                </div>
+                <a href="#" class="valpanier">Valider le panier</a>
+            </div>
+        </section>
     </section>
-    <section class="bas">
-        <div class="gauche">
-            <img src="triste-removebg-preview.png" alt="bonhomme triste" class="triste">
-            <span>Le panier est vide</span>
-        </div>
-        <div class="droite">
-            <span class="ttre">Récapitulatif</span>
-            <div class="prix">
-                <span>prix panier</span>
-                <span>0€</span>
+    <section id="darkshop">
+        <section class="ligne">
+            <div class="part">
+                <span class="z1">
+                    1
+                </span>
+                <p>Panier</p>
             </div>
-            <div class="prix">
-                <span>extras</span>
-                <span>0€</span>
+            <div class="part">
+                <span class="z2">
+                    2
+                </span>
+                <p>Livraison</p>
             </div>
-            <div class="prix">
-                <span>Frais de livraison</span>
-                <span>0€</span>
+            <div class="part">
+                <span class="z1">
+                    3
+                </span>
+                <p>Paiement</p>
             </div>
-            <div class="code">
-                <textarea name="code promo" id="cp" placeholder="code promo"></textarea>
-                <a href="#" class="valcode">OK</a>
+            <div class="part">
+                <span class="z2">
+                    4
+                </span>
+                <p>Confirmation</p>
             </div>
-            <hr>
-            <div class="prix">
-                <span class="tt">TOTAL</span>
-                <span>0€</span>
+        </section>
+        <section class="bas">
+            <div class="gauche">
+                <img src="fuck-you-mouse-removebg-preview.png" alt="mickey doigt" class="mck">
+                <span>Achete !!</span>
             </div>
-            <a href="#" class="valpanier">Valider le panier</a>
-        </div>
+            <div class="droite">
+                <span class="ttre">Récapitulatif</span>
+                <div class="prix">
+                    <span>prix panier</span>
+                    <span>0€</span>
+                </div>
+                <div class="prix">
+                    <span>extras</span>
+                    <span>0€</span>
+                </div>
+                <div class="prix">
+                    <span>Frais de livraison</span>
+                    <span>0€</span>
+                </div>
+                <div class="code">
+                    <textarea name="code promo" id="cp" placeholder="code promo"></textarea>
+                    <a href="#" class="valcode">OK</a>
+                </div>
+                <hr>
+                <div class="prix">
+                    <span class="tt">TOTAL</span>
+                    <span>0€</span>
+                </div>
+                <a href="#" class="valpanier">Valider le panier</a>
+            </div>
+        </section>
+    </section>
     </section>
     <footer>
 
-    </footer>    
+    </footer> 
+    <script>
+
+        const checkbox = document.getElementById('dark');
+        const darkshopSection = document.getElementById('darkshop');
+        const lightshopSection = document.getElementById('lightshop');
+
+        checkbox.addEventListener('change', function() {
+            if (this.checked) {
+                darkshopSection.style.display = 'block'; 
+                lightshopSection.style.display = 'none'; 
+            } else {
+                darkshopSection.style.display = 'none'; 
+                lightshopSection.style.display = 'block'; 
+            }
+        });
+        darkshopSection.style.display = 'none';
+
+    </script>   
 </body>
 </html>
