@@ -16,6 +16,18 @@ header{
     width: 90px;
 }
 
+.article{
+    background-color: #70707017;
+    width: 98%;
+    margin-bottom: 5px;
+}
+
+.extra{
+    background-color: #70707017;
+    width: 98%;
+    margin-bottom: 5px;    
+}
+
 #lightshop{
     display: block;
 }
