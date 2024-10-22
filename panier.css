@@ -6,6 +6,11 @@ header{
     display: flex;
 }
 
+.triste{
+    height: 150px;
+    width: 150px;
+}
+
 .switch {
     position: relative;
     display: inline-block;
@@ -122,11 +127,14 @@ section{
 }
 
 .gauche{
+    display: flex;
+    align-items: center;
     width: 70%;
     background-color: rgba(199, 199, 199, 0.538);
     margin-right: 15px;
     height: fit-content;
     padding: 10px;
+    flex-direction: column;
 }
 
 .ttre{
