@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <title>Accueil</title>
     <link rel="stylesheet" href="style_index.css">
+    <link rel="stylesheet" href="headerStyle.css">
+    <link rel="stylesheet" href="footerStyle.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
@@ -14,7 +16,7 @@
     <!--Header-->
     <header>
         <label class="switch">
-            <input type="checkbox">
+            <input type="checkbox" id="dark">
             <span class="slider"></span>
         </label>
         
@@ -30,56 +32,143 @@
 
     <!--Contenu de la page d'accueil-->
 
-    <div class="SloganTitre">
-        <h1>DarkShop</h1> <br> la seule limite, votre imagination
-    </div>
 
-    <div id="description">
-        <h2>Description du site</h2>
-        <p>DarkShop est un site e-commerce dynamique qui propose une vaste sélection de produits légaux, allant des bonbons gourmands aux montres à gousset élégantes. Chaque article est minutieusement sélectionné pour garantir qualité et originalité, permettant aux clients de découvrir des pièces uniques et tendance qui se démarquent dans un marché varié.
-    </div>
 
-    <div class="container_pack">
-        <div class="item large">
-            <h2>Pack Exotique</h2>
-            <p>Un pack unique en son genre : 4 Jours à Cuba.</p>
+    <section id="lightshop" style="background-color:cornflowerblue;">
+        <img src="FondSloganLS.jpg" alt="Fond Accueil LightShop">
+        <div class="SloganTitre">
+            <h1>DarkShop</h1> <br> <h2>notre seule limite, votre imagination</h2>
         </div>
-    </div>
 
-    <div class="container_text light">
-        <div class="ArtPop">
-            <h3>Articles Populaires</h3>
+        <div id="description">
+            <h3>Description du site</h3>
+            <p>DarkShop est un site e-commerce dynamique qui propose une vaste sélection de produits légaux, allant des bonbons gourmands aux carte pokémon de ton petit cousin. Chaque article est minutieusement sélectionné pour garantir qualité et originalité, permettant aux clients de découvrir des pièces uniques et tendance qui se démarquent dans un marché varié.
         </div>
-        <div class="ArtNew">
-            <h3>Nouveaux Articles</h3>
+
+        <div class="container_pack">
+            <div class="item large">
+                <h3>Pack Exotique</h3>
+                <p>Un pack unique en son genre : 4 Jours à Cuba.</p>
+            </div>
         </div>
-    </div>
-    <div class="container light">
-        <a href="boutique.html">
-            <div class="item">
-                <h3>Dragibus</h3>
-                <p>Tout simplement les meilleurs sucrerie au monde </p>
+
+        <div class="container_text light">
+            <div class="ArtPop">
+                <h3>Articles Populaires</h3>
             </div>
-        </a>
-        <a href="boutique.html">
-            <div class="item">
-                <h3>Nettoyage</h3>
-                <p>Nettoyage de vos maison/appartement par <br> nos professionnels avec un diplome BAC+12</p>
+            <div class="ArtNew">
+                <h3>Nouveaux Articles</h3>
             </div>
-        </a>
-        <a href="boutique.html">
-            <div class="item">
-                <h3>Queue</h3>
-                <p>Vous devez attendre dans une queue. On la fait pour vous !</p>
+        </div>
+        <div class="container light">
+            <a href="boutique.html">
+                <div class="item">
+                    <h3>Dragibus</h3>
+                    <p>Tout simplement les meilleurs sucrerie au monde </p>
+                </div>
+            </a>
+            <a href="boutique.html">
+                <div class="item">
+                    <h3>Nettoyage</h3>
+                    <p>Nettoyage de vos maison/appartement par <br> nos professionnels avec un diplome BAC+12</p>
+                </div>
+            </a>
+            <a href="boutique.html">
+                <div class="item">
+                    <h3>Queue</h3>
+                    <p>Vous devez attendre dans une queue. On la fait pour vous !</p>
+                </div>
+            </a>
+            <a href="boutique.html">
+                <div class="item">
+                    <h3>Voyage</h3>
+                    <p>Partez en voyage au pays de votre choix.<br> On s'occupe du reste</p>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <section id="darkshop" style="background-color: crimson;">
+        <img src="FondSloganDS.png" alt="Fond Accueil LightShop">
+        <div class="SloganTitre">
+            <h1>DarkShop</h1> <br> notre seule limite, votre imagination
+        </div>
+
+        
+        <div id="description">
+            <p>DarkShop est un site e-commerce dynamique qui propose une vaste sélection de produits <b>illégaux</b>, allant des armes aux disparition. Chaque article est minutieusement sélectionné pour garantir qualité et originalité, permettant aux clients de découvrir des pièces / action uniques et tendance qui se démarquent dans un marché varié.
+        </div>
+
+
+
+        <div class="container_pack">
+            <h3>ATTENTION !!!! MEGA PROMO EN CE MOMENT !</h3>
+            <a href="boutique.html">
+                <div class="item">
+                    <h3>Pack Exotique</h3>
+                    <p>Dans ce pack extraordianaire, 2 humains acheté un OSCAR <b>offert</b></p>
+                </a>
             </div>
-        </a>
-        <a href="boutique.html">
-            <div class="item">
-                <h3>Voyage</h3>
-                <p>Partez en voyage au pays de votre choix.<br> On s'occupe du reste</p>
+        </div>
+
+        <div class="container_text light">
+            <div class="ArtPop">
+                <h3>Articles Populaires</h3>
             </div>
-        </a>
-    </div>
+            <div class="ArtNew">
+                <h3>Nouveaux Articles</h3>
+            </div>
+        </div>
+        <div class="container light">
+            <a href="boutique.html">
+                <div class="item">
+                    <h3>Système de Hack</h3>
+                    <p>Prenez possesions de n'importe qu'elle compte à n'importe qui. <br>(Du réseaux social aux compte bancaire)</p>
+                </div>
+            </a>
+            <a href="boutique.html">
+                <div class="item">
+                    <h3>Méthamphétamine</h3>
+                    <p>Pour passer de bonne soirée entre potes.</p>
+                </div>
+            </a>
+            <a href="boutique.html">
+                <div class="item">
+                    <h3>Stalk de personne</h3>
+                    <p>Vous voulez connaître les moindres mouvement d'une personne <br>en qui vous n'avez pas confiance ?</p>
+                </div>
+            </a>
+            <a href="boutique.html">
+                <div class="item">
+                    <h3>Disparition</h3>
+                    <p>Effacez votre vie, même votre mère oulbiera votre existance.</p>
+                </div>
+            </a>
+        </div>
+
+    </section>
+
+    <!--javaScript-->
+
+    <script>
+
+        const checkbox = document.getElementById('dark');
+        const darkshopSection = document.getElementById('darkshop');
+        const lightshopSection = document.getElementById('lightshop');
+
+        checkbox.addEventListener('change', function() {
+            if (this.checked) {
+                darkshopSection.style.display = 'block'; 
+                lightshopSection.style.display = 'none'; 
+            } else {
+                darkshopSection.style.display = 'none'; 
+                lightshopSection.style.display = 'block'; 
+            }
+        });
+        
+        darkshopSection.style.display = 'none';
+
+    </script>
 
 
     <!--Footer-->
