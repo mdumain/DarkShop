@@ -212,11 +212,13 @@ h3{
 
 }
 
-
+#darkshop .titre{
+    color: #FE277E;
+    height: 70vh;
+}
 
 .titre{
-    background-color: azure;
-    color: rgb(23, 14, 33);
+    color: rgb(57, 41, 76);
     height: 70vh;
 }
 
@@ -335,3 +337,26 @@ h3{
     font-weight: bold;
 }
 
+.titre{
+    animation : reveal;
+    animation-duration: 2s;
+}
+
+.bouton-cat{
+    animation : reveal;
+    animation-duration: 4s;
+}
+
+
+
+@keyframes reveal {
+    from {
+        transform: scale(0);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+    
+}

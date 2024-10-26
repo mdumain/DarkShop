@@ -30,11 +30,14 @@
 
 
 
-    <section class="titre">
-    <h1>DarkShop</h1> <br>
-    <h4>L'e-shop numéro 1 du marché</h4> </section>
+
 
     <section id="lightshop">
+        <section class="titre">
+            <h1>DarkShop</h1> <br>
+            <h4>L'e-shop numéro 1 du marché</h4> </section>
+
+
         <button class="bouton-cat" onclick="toggleCategory('figurine')">Figurine</button>
 
         <div id="figurine" class="categorie hidden" >
@@ -186,6 +189,9 @@
     </section>
 
     <section id="darkshop">
+        <section class="titre">
+            <h1>DarkShop</h1> <br>
+            <h4>L'e-shop numéro 1 du marché</h4> </section>
         
         <button class="bouton-cat" onclick="toggleCategory('humain')">Humain</button>
         <div id="humain" class="categorie hidden" >
@@ -228,15 +234,41 @@
 
         <div id="drogue" class="categorie hidden" >
 
+            <div class="article">
+                <img src="https://media.gqmagazine.fr/photos/5b991bc4e423e20011352513/16:9/w_1280,c_limit/crystal_meth_2911.jpeg" alt="Méthamphétamine">
+                <h2>Méthamphétamine</h2>
+                <p>Notre Méthamphétamine est de qualité supérieur !</p>
+                <span>49.99€/g</span>
+                <button>Acheter</button>
+            </div>
+
+            
         </div>
+
         <button class="bouton-cat" onclick="toggleCategory('tueurgage')">Tueur à Gage</button>
 
         <div id="tueurgage" class="categorie hidden" >
-
+                
+                <div class="article">
+                    <img src="https://store-images.s-microsoft.com/image/apps.24317.13747708785346246.26b7a239-7aa3-4075-aceb-3fe6324cd11b.66f73e49-163f-443e-bd7c-0d3fcdb6f16a?q=90&w=480&h=270" alt="Tueur à gage Hit">
+                    <h2>Hit</h2>
+                    <p>Hit est un tueur à gage de qualité supérieur ! Il executera toute vos commandes ! Taux de réussite : 98%</p>
+                    <span>4999.99€</span>
+                    <button>Acheter</button>
+                </div>
+                
+                <div class="article">
+                    <img src="https://actualitesjeuxvideo.fr/wp-content/uploads/2017/02/Revenger-%E2%80%93-Michelle-Rodriguez.jpg" alt="Tueur à gage Lara ">
+                    <h2>Lara</h2>
+                    <p>Lara est une tueuse à gage de qualité supérieur ! Elle executera toute vos commandes ! Taux de réussite : 99%  </p>
+                    <span>5499.99€</span>
+                    <button>Acheter</button>
+                </div>
         </div>
         <button class="bouton-cat" onclick="toggleCategory('arme')">Arme</button>
 
         <div id="arme" class="categorie hidden" >
+            <h3>Il n'y a malheureusement rien dans cette catégorie...</h3>
 
         </div>
         <button class="bouton-cat" onclick="toggleCategory('stalk')">Stalking</button>
