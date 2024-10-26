@@ -46,19 +46,19 @@ section{
 }
 
 .z1{
-    z-index: 0;
+    background-color: white;
 }
 
 .z2{
-    z-index: 1;
+    background-color: white;
 }
 
 .z1l{
-    z-index: 0;
+    background-color: white;
 }
 
 .z2l{
-    z-index: 1;
+    background-color: white;
 }
 
 .part{
@@ -66,7 +66,7 @@ section{
 }
 
 .z1, .z2{
-    background-color: transparent;
+    background-color: white;
     color: #fe277e;
     border: .2rem solid #fe277e;
     border-radius: 50%;
@@ -77,10 +77,11 @@ section{
     line-height: 1.6;
     position: relative;
     width: 3rem;
+    z-index: 2;
 }
 
 .z1l, .z2l{
-    background-color: transparent;
+    background-color: white;
     color: black;
     border: .2rem solid black;
     border-radius: 50%;
@@ -91,6 +92,7 @@ section{
     line-height: 1.6;
     position: relative;
     width: 3rem;
+    z-index: 2;
 }
 
 .z1::after,.z1::before,.z2::after, .z2::before{
@@ -100,6 +102,7 @@ section{
     position: absolute;
     top: 50%;
     width: 300%;
+    z-index: 1;
 }
 
 .z1l::after,.z1l::before,.z2l::after, .z2l::before{
@@ -109,6 +112,7 @@ section{
     position: absolute;
     top: 50%;
     width: 300%;
+    z-index: 1;
 }
 
 .ligned {
