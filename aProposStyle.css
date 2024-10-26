@@ -1,7 +1,30 @@
 h1{
     font-weight: bold;
+    font-family: "Bebas Neue";
     text-align: center;
-    font-size: 1000%
+    font-size: 1000%;
+
+    margin-bottom: 0;
+}
+
+h2{
+    font-family: "Roboto";
+    text-align: center;
+    font-size: 250%;
+}
+
+h3{
+    text-align: center;
+}
+
+h3 a{
+    font-family: "Roboto Mono";
+    color: black;
+    font-size: 200%;
+}
+
+a:hover{
+    background-color: #47Ead0;
 }
 
 .rose{
@@ -15,17 +38,23 @@ h1{
     justify-content: space-between;
 
     box-shadow: 2px 2px 2px 1px #Fe277e;
+
+    text-align: right;
+
+    padding: 2px;
 }
 
 .noir{
     background-color: #47Ead0;
-    color: white;
+    color: black;
 
     display: grid;
     width: 100%;
     grid-template-columns: 70% 30%;
     align-items: start;
     justify-content: space-between;
+
+    padding: 2px;
 }
 
 .blanc{
@@ -37,6 +66,8 @@ h1{
     grid-template-columns: 70% 30%;
     align-items: start;
     justify-content: space-between;
+
+    padding: 2px;
 }
 
 
@@ -54,3 +85,8 @@ h1{
     gap: 30px;
 }
 
+/* TEMPORAIRE */
+
+{
+    border : 1px solid red;
+}
