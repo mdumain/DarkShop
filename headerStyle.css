@@ -8,9 +8,8 @@ a{
 
 header{
     display: flex;
-    height: 80px;
     align-items: center;
-    background-color: black;
+    height: 80px;
 }
 
 .nav_header{
@@ -38,6 +37,9 @@ header>img{
     justify-content: space-between;
     width: 100%;
     align-items: center;
+    position:fixed;
+    background-color: black;
+    height: 80px;
 }
 
 .switch{

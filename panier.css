@@ -46,19 +46,19 @@ section{
 }
 
 .z1{
-    z-index: 0;
+    background-color: white;
 }
 
 .z2{
-    z-index: 1;
+    background-color: white;
 }
 
 .z1l{
-    z-index: 0;
+    background-color: white;
 }
 
 .z2l{
-    z-index: 1;
+    background-color: white;
 }
 
 .part{
@@ -66,7 +66,7 @@ section{
 }
 
 .z1, .z2{
-    background-color: transparent;
+    background-color: white;
     color: #fe277e;
     border: .2rem solid #fe277e;
     border-radius: 50%;
@@ -77,10 +77,11 @@ section{
     line-height: 1.6;
     position: relative;
     width: 3rem;
+    z-index: 2;
 }
 
 .z1l, .z2l{
-    background-color: transparent;
+    background-color: white;
     color: black;
     border: .2rem solid black;
     border-radius: 50%;
@@ -91,6 +92,7 @@ section{
     line-height: 1.6;
     position: relative;
     width: 3rem;
+    z-index: 2;
 }
 
 .z1::after,.z1::before,.z2::after, .z2::before{
@@ -100,6 +102,7 @@ section{
     position: absolute;
     top: 50%;
     width: 300%;
+    z-index: 1;
 }
 
 .z1l::after,.z1l::before,.z2l::after, .z2l::before{
@@ -109,6 +112,7 @@ section{
     position: absolute;
     top: 50%;
     width: 300%;
+    z-index: 1;
 }
 
 .ligned {
@@ -147,8 +151,8 @@ section{
 
 .bas{
     display: flex;
-    margin-left: 10%;
-    margin-right: 10%;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 h1{
@@ -175,24 +179,28 @@ h3{
 .gauchel{
     display: flex;
     align-items: center;
-    width: 70%;
+    width: 60%;
+    min-width: min-content;
     background-color: rgba(199, 199, 199, 0.538);
     margin-right: 15px;
     height: fit-content;
     padding: 10px;
     flex-direction: column;
+    margin-bottom: 5px;
 }
 
 .gauched{
     display: flex;
     align-items: center;
-    width: 70%;
+    width: 60%;
+    min-width: min-content;
     background-color: rgba(199, 199, 199, 0.538);
     margin-right: 15px;
     height: fit-content;
     padding: 10px;
     flex-direction: column;
     border: solid, yellow;
+    margin-bottom: 5px;
 }
 
 .ttre{
@@ -204,7 +212,8 @@ h3{
     flex-direction: column;     
     display: flex;
     margin-left: 15px;
-    width: 30%;
+    width: 20%;
+    min-width: max-content;
     max-width: 30%;
     background-color: #c3c3c3;
     height: min-content;
@@ -216,7 +225,8 @@ h3{
     display: flex;
     margin-left: 15px;
     border: solid, yellow;
-    width: 30%;
+    width: 20%;
+    min-width: max-content;
     max-width: 30%;
     background-color: #fe277e;
     height: min-content;
