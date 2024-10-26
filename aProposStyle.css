@@ -39,6 +39,10 @@ h3 a:hover{
     background-color: #47Ead0;
 }
 
+p{
+    font-size: larger;
+}
+
 .rose{
     background-color: #Fe277e;
     color: white;
@@ -50,6 +54,21 @@ h3 a:hover{
     justify-content: space-between;
 
     box-shadow: 2px 2px 2px 1px #Fe277e;
+
+    text-align: right;
+
+    padding: 2px;
+}
+
+.gris{
+    background-color: #7f7b7c;
+    color: white;
+
+    display: grid;
+    width: 100%;
+    grid-template-columns: 30% 70%;
+    align-items: start;
+    justify-content: space-between;
 
     text-align: right;
 
