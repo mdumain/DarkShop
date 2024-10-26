@@ -30,7 +30,7 @@
 
 #lightshop{
     display: block;
-    height: 100%;
+    height: 200%;
 }
 
 #darkshop{
@@ -471,9 +471,21 @@ input:checked + .slider:before {
 }
 
 footer{
-    background-color: black;
+    
 }
 
-footer>div{
+.ftd>div{
     color: white;
+}
+
+.ftl>div{
+    color: black;
+}
+
+.ftl{
+    background-color: white;
+}
+
+.ftd{
+    background-color: black;
 }
