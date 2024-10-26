@@ -155,6 +155,9 @@ input:checked + .slider:before {
     justify-content: center;
     align-items: center;
     background: #ffffff;
+    padding-bottom: 20px;
+    padding-top: 20px;
+
 }
 
 #darkshop{
@@ -165,6 +168,8 @@ input:checked + .slider:before {
     justify-content: center;
     align-items: center;
     background: linear-gradient(rgb(94, 94, 94), black);
+    padding-top: 20px;
+    padding-bottom: 20px;
 
 }
 
