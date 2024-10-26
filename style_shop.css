@@ -94,6 +94,49 @@ input:checked + .slider:before {
     transform: translateX(26px);
 }
 
+/* Cacher la navigation et afficher l'icône du menu burger en mode mobile */
+.nav_header {
+    display: flex;
+    gap: 15px;
+}
+
+.nav_header>a {
+    color: white;
+    text-decoration: none;
+    border : 2px solid rgb(0, 0, 0);
+}
+
+.burger-menu {
+    display: none;
+    font-size: 2em;
+    cursor: pointer;
+    align-self: center;
+}
+
+.mobile-nav {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #7a7979;
+    padding: 10px;
+}
+
+.mobile-nav a {
+    color: white;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .nav_header {
+        display: none; 
+    }
+    
+    .burger-menu {
+        display: block; 
+    }
+
+
+}
 
 
 
@@ -218,8 +261,11 @@ h3{
 }
 
 .titre{
+    display: flex;
+    flex-wrap: wrap;
     color: rgb(57, 41, 76);
     height: 70vh;
+    justify-content: center;
 }
 
 
