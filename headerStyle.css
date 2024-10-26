@@ -94,3 +94,10 @@ input:checked + .slider:before {
     transform: translateX(26px);
 }
 
+.pan{
+    display: flex;
+    align-items: center;
+}
+
+.pan>a{padding-right: 5px;}
+
