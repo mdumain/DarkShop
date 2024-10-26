@@ -1,73 +1,63 @@
 body{
     font-size: 20px;
     margin: 0px;
+    overflow-x: hidden;
 }
-
-/*Haut de Page*/
-
-
-.switch {
-    position: relative;
-    display: inline-block;
-    width: 60px;
-    height: 34px;
-  }
-  
-.switch input {
-    opacity: 0;
-    width: 0;
-    height: 0;
-}
-  
-  .slider {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #ccc;
-    -webkit-transition: .4s;
-    transition: .4s;
-}
-  
-.slider:before {
-    position: absolute;
-    content: "";
-    height: 26px;
-    width: 26px;
-    left: 4px;
-    bottom: 4px;
-    background-color: white;
-    -webkit-transition: .4s;
-    transition: .4s;
-}
-
-input:checked + .slider {
-    background-color: red;
-}
-  
-
-input:checked + .slider:before {
-    -webkit-transform: translateX(26px);
-    -ms-transform: translateX(26px);
-    transform: translateX(26px);
-}
-
-
 
 /*Contenu de la page*/
 
-img{
-    margin-top: -200px;
-    position: absolute;
-    z-index: 0;
+/* Texte défilant */
+.messagedefilant {
+    display: block;
+    margin: 40px auto;
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+    width: 50%;
+    width: 1550px;
+    height: 150px;
 }
+   
+.messagedefilant div {
+    position: absolute;
+    min-width: 100%; 
+}
+   
+.messagedefilant div span, .messagedefilant div:after {
+    position: relative;
+    display: inline-block;
+    font-size: 150px;
+    white-space: nowrap;
+    top:0;
+}
+   
+.messagedefilant div span {
+    animation: defilement 10s infinite linear;
+}
+   
+.messagedefilant div:after {
+    position: absolute;
+    top:0; left:0;
+    content:attr(data-text);
+    animation: defilement2 10s infinite linear;
+}
+   
+@keyframes defilement {
+    0% { margin-left: 0; }
+    100% { margin-left: -100%; }
+}
+   
+@keyframes defilement2 {
+    0% { margin-left: 100%; }
+    100% { margin-left: 0%; }
+}
+
+
+
 
 .SloganTitre{
     text-align: center;
     font-size: 65px;
-    margin-top: 300px;
     font-family: "Anton", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -77,21 +67,33 @@ img{
     z-index: 1;
 }
 
-h1{
-    font-size: 250px;
+span{
+    font-size: 150px;
     margin: 0px;
+}
+
+h2{
+    margin-top: 0px;
+    font-size: 75px;
+    text-align: center;
 }
 
 h3{
     font-size: 50px;
 }
 
+#Crane{
+    align-items: center;
+}
+
+section{
+    margin-top: -40px;
+}
+
 #description{
-    margin-top: 600px;
     text-align: center;
     font-size: 22px;
 
-    background-color: rgba(127, 127, 127, 0.2);
     padding: 10px;
     margin-left: 200px;
     margin-right: 200px;
@@ -104,7 +106,7 @@ h3{
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    margin-top: 500px; 
+    margin-top: 200px; 
 }
 .container {
     display: flex;
@@ -131,26 +133,40 @@ h3{
   
 .item{
     padding: 30px;
-    background-color: rgba(127, 127, 127, 0.2);
     border-radius: 10px;
     font-size: 20px;
-    transition: font-size 1.5s;
+}
+
+.Dark{
+    background-color: #Fe277e;
+    color: white;
+    box-shadow: 3px 3px rgb(155, 0, 179), -1em 0 .4em rgb(162, 0, 51);
+}
+
+.Dark:hover{
+    background-color: #ad1250;
+    box-shadow: 3px 3px rgb(109, 0, 125), -1em 0 .4em rgb(104, 0, 33);
+}
+
+.Sombre{
+    color: white;
+}
+
+.Light{
+    background-color: #7f7b7c;
     color: black;
 }
 
-a{
-    text-decoration: none;
+.Light:hover{
+    background-color: rgb(80, 80, 80);
 }
 
-
-
-.image{
-    width: 500px;
-    transition : width 1.5s
+.clair{
+    color: black;
 }
 
-.item:hover{
-    font-size: 30px;
-}
+.bouton{
+    padding: 10px;
+    text-align: center;
 
-/*Pied de Page*/
+}
