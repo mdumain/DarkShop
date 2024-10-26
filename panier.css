@@ -470,9 +470,6 @@ input:checked + .slider:before {
     transform: translateX(26px);
 }
 
-footer{
-    
-}
 
 .ftd>div{
     color: white;
