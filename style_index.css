@@ -1,212 +1,174 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <title>Accueil</title>
-    <link rel="stylesheet" href="style_index.css">
-    <link rel="stylesheet" href="headerStyle.css">
-    <link rel="stylesheet" href="footerStyle.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
-</head>
-<body>
+body{
+    font-size: 20px;
+    margin: 0px;
+    overflow-x: hidden;
+}
 
+/*Contenu de la page*/
 
-    <!--Header-->
-    <header>
-        <img src="logods.png" alt="le logo">
-        <div class="head">
-            <nav class="nav_header">
-                <a href="index.html">Accueil</a>
-                <a href="boutique.html">Boutique</a>
-                <a href="aPropos.html">A propos</a>
-            </nav>
-            <div class="pan">
-                <a href="panier.html"> <img src="shopping_cart.png" alt="Panier" width="50px"></a>
-                <label class="switch">
-                <input type="checkbox" id="dark">
-                <span class="slider"></span>
-            </label>
-            </div>
-            
-        </div>
-    </header>
-
-
-    <!--Contenu de la page d'accueil-->
-
-
-
-    <section class="Clair" id="lightshop" style="background-color:whitesmoke;">        
-        <div class="messagedefilant">
-            <div data-text="DARK-SHOP"><span>DARK-SHOP</span></div>
-          </div>
-           
-        <h2>Notre seul limite, votre imagination</h2>
-
-        <div style="text-align: center;">
-            <img src="fallout.png" alt="Image de Crâne">
-        </div>
-
-        <div class="container_pack">
-            <h2>En ce moment</h2>
-            <a href="boutique.html">
-                <div class="item Light">
-                    <h3>Pack Exotique</h3>
-                    <p>Tentez de gagner un séjour inoubliable à Cuba. <b>1 chance sur 20 Milliard</b> en achetant sur notre boutique</p>
-                </div>
-            </a>
-        </div>
-        <br><br><br>
-        <div class="container_text">
-            <div class="ArtPop">
-                <h3>Articles Populaires</h3>
-            </div>
-        </div>
-        <div class="container light">
-            <a href="boutique.html">
-                <div class="item Light">
-                    <img src="Dragibus.jpg" alt="Image de Piratage" width="350px">
-                    <h3>Dragibus</h3>
-                </div>
-            </a>
-            <a href="boutique.html">
-                <div class="item Light">
-                    <img src="Luigi.png" alt="Image de Médicament" width="350px">
-                    <h3>Figurine</h3>
-                </div>
-            </a>
-            <a href="boutique.html">
-                <div class="item Light">
-                    <img src="Booster_Pokémon.png" alt="Image Stalk" width="350px">
-                    <h3>Booster Pokémon</h3>
-                </div>
-            </a>
-            <a href="boutique.html">
-                <div class="item Light">
-                    <img src="Tahiti.png" alt="Image Dispartion" width="350px">
-                    <h3>Voyage à Tahiti</h3>
-                </div>
-            </a>
-        </div>
-
-        <br><br><br>
-
-        <h2>En savoir un peu plus...</h2>
-        <div id="description">
-            <p>DarkShop est un site e-commerce dynamique qui propose une vaste sélection de produits <b>illégaux</b>, allant des armes aux disparition. Chaque article est minutieusement sélectionné pour garantir qualité et originalité, permettant aux clients de découvrir des pièces / action uniques et tendance qui se démarquent dans un marché varié.
-        </div>
-
-        <div  class="bouton">
-            <a href="aPropos.html">
-                <p>En savoir plus</p>
-            </a>
-        </div>
-
-    </section>
+/* Texte défilant */
+.messagedefilant {
+    display: block;
+    margin: 40px auto;
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+    width: 50%;
+    width: 1550px;
+    height: 150px;
+}
+   
+.messagedefilant div {
+    position: absolute;
+    min-width: 100%; 
+}
+   
+.messagedefilant div span, .messagedefilant div:after {
+    position: relative;
+    display: inline-block;
+    font-size: 150px;
+    white-space: nowrap;
+    top:0;
+}
+   
+.messagedefilant div span {
+    animation: defilement 10s infinite linear;
+}
+   
+.messagedefilant div:after {
+    position: absolute;
+    top:0; left:0;
+    content:attr(data-text);
+    animation: defilement2 10s infinite linear;
+}
+   
+@keyframes defilement {
+    0% { margin-left: 0; }
+    100% { margin-left: -100%; }
+}
+   
+@keyframes defilement2 {
+    0% { margin-left: 100%; }
+    100% { margin-left: 0%; }
+}
 
 
 
-    <!--Changement-->
 
+.SloganTitre{
+    text-align: center;
+    font-size: 65px;
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    position: relative;
+    
+    font-size: 65px;
+    z-index: 1;
+}
 
+span{
+    font-size: 150px;
+    margin: 0px;
+}
 
-    <section class="Sombre" id="darkshop" style="background-color:  black;">
-        <div class="messagedefilant">
-            <div data-text="DARK-SHOP"><span>DARK-SHOP</span></div>
-          </div>
-           
-        <h2>Notre seul limite, votre imagination</h2>
+h2{
+    margin-top: 0px;
+    font-size: 75px;
+    text-align: center;
+}
 
-        <div style="text-align: center;">
-            <img src="Skull_and_Crossbones.svg" alt="Image de Crâne">
-        </div>
+h3{
+    font-size: 50px;
+}
 
-        <div class="container_pack">
-            <h2>En ce moment</h2>
-            <a href="boutique.html">
-                <div class="item Dark">
-                    <h3>Pack Exotique</h3>
-                    <p>Dans ce pack extraordianaire, 2 humains acheté un OSCAR <b>offert</b></p>
-                </div>
-            </a>
-        </div>
-        <br><br><br>
-        <div class="container_text light">
-            <div class="ArtPop">
-                <h3>Articles Populaires</h3>
-            </div>
-        </div>
-        <div class="container light">
-            <a href="boutique.html">
-                <div class="item Dark">
-                    <img src="Hack.jpg" alt="Image de Piratage" width="350px">
-                    <h3>Système de Hack</h3>
-                </div>
-            </a>
-            <a href="boutique.html">
-                <div class="item Dark">
-                    <img src="Médicament.jpg" alt="Image de Médicament" width="350px">
-                    <h3>Stupéfiant</h3>
-                </div>
-            </a>
-            <a href="boutique.html">
-                <div class="item Dark">
-                    <img src="Espionnage.jpg" alt="Image Stalk" width="350px">
-                    <h3>Stalk de personne</h3>
-                </div>
-            </a>
-            <a href="boutique.html">
-                <div class="item Dark">
-                    <img src="Disparition.jpg" alt="Image Dispartion" width="350px">
-                    <h3>Disparition</h3>
-                </div>
-            </a>
-        </div>
+#Crane{
+    align-items: center;
+}
 
-        <br><br><br>
+section{
+    margin-top: -40px;
+}
 
-        <h2>En savoir un peu plus...</h2>
-        <div id="description">
-            <p>DarkShop est un site e-commerce dynamique qui propose une vaste sélection de produits <b>illégaux</b>, allant des armes aux disparition. Chaque article est minutieusement sélectionné pour garantir qualité et originalité, permettant aux clients de découvrir des pièces / action uniques et tendance qui se démarquent dans un marché varié.
-        </div>
+#description{
+    text-align: center;
+    font-size: 22px;
 
-        <div  class="bouton">
-            <a href="aPropos.html">
-                <p>En savoir plus</p>
-            </a>
-        </div>
+    padding: 10px;
+    margin-left: 200px;
+    margin-right: 200px;
+    border-radius: 10px;
 
-    </section>
+}
 
-    <!--javaScript-->
+.container_pack{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 200px; 
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  
+    flex-wrap: wrap;
+    gap: 100px;
 
-    <script>
+    margin-bottom: 50px;
+}
 
-        const checkbox = document.getElementById('dark');
-        const darkshopSection = document.getElementById('darkshop');
-        const lightshopSection = document.getElementById('lightshop');
+.container_text{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    
+    margin-top: 100px;
 
-        checkbox.addEventListener('change', function() {
-            if (this.checked) {
-                darkshopSection.style.display = 'block'; 
-                lightshopSection.style.display = 'none'; 
-            } else {
-                darkshopSection.style.display = 'none'; 
-                lightshopSection.style.display = 'block'; 
-            }
-        });
-        
-        darkshopSection.style.display = 'none';
+    flex-wrap: wrap;
+    gap: 100px;}
+  
+.item{
+    padding: 30px;
+    border-radius: 10px;
+    font-size: 20px;
+}
 
-    </script>
+.Dark{
+    background-color: #Fe277e;
+    color: white;
+    box-shadow: 3px 3px rgb(155, 0, 179), -1em 0 .4em rgb(162, 0, 51);
+}
 
+.Dark:hover{
+    background-color: #ad1250;
+    box-shadow: 3px 3px rgb(109, 0, 125), -1em 0 .4em rgb(104, 0, 33);
+}
 
-    <!--Footer-->
-    <footer>
+.Sombre{
+    color: white;
+}
 
-    </footer>
+.Light{
+    background-color: #7f7b7c;
+    color: black;
+    box-shadow: 3px 3px rgb(151, 151, 151), -1em 0 .4em rgb(156, 156, 156);
+}
 
-</body>
-</html>
+.Light:hover{
+    background-color: rgb(80, 80, 80);
+    box-shadow: 3px 3px rgb(91, 91, 91), -1em 0 .4em rgb(91, 91, 91);
+}
+
+.clair{
+    color: black;
+}
+
+.bouton{
+    padding: 10px;
+    text-align: center;
+
+}
