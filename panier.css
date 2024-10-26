@@ -406,6 +406,7 @@ header{
 
 header>img{
     height: 100%;
+    z-index: 100;
 }
 
 .head{
