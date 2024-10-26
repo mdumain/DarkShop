@@ -261,11 +261,8 @@ h3{
 }
 
 .titre{
-    display: flex;
-    flex-wrap: wrap;
     color: rgb(57, 41, 76);
     height: 70vh;
-    justify-content: center;
 }
 
 
