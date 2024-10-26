@@ -155,10 +155,12 @@ section{
 .Light{
     background-color: #7f7b7c;
     color: black;
+    box-shadow: 3px 3px rgb(151, 151, 151), -1em 0 .4em rgb(156, 156, 156);
 }
 
 .Light:hover{
     background-color: rgb(80, 80, 80);
+    box-shadow: 3px 3px rgb(91, 91, 91), -1em 0 .4em rgb(91, 91, 91);
 }
 
 .clair{
