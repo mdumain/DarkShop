@@ -97,7 +97,9 @@ input:checked + .slider:before {
 
 
 
-
+body{
+    font-family: "Roboto";
+}
 
 
 #darkshop .bouton-cat{
@@ -183,6 +185,10 @@ input:checked + .slider:before {
     font-family: "Bebas Neue";
 
 
+}
+
+.arnaque{
+    font-size: 3px;
 }
 
 h3{
