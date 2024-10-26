@@ -23,6 +23,22 @@ h2{
     justify-content: space-between;
 }
 
+.light{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 50% 120px;
+    align-items: start;
+    justify-content: space-between;
+}
+
+.light div{
+    display: flex;
+}
+
+.light img{
+    align-self: flex-end;
+}
+
 .noir div{
     display: flex;
 }
