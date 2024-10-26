@@ -1,5 +1,7 @@
-h2{
+h1{
     font-weight: bold;
+    text-align: center;
+    font-size: 1000%
 }
 
 .rose{
@@ -16,43 +18,39 @@ h2{
 }
 
 .noir{
+    background-color: #47Ead0;
+    color: white;
+
     display: grid;
     width: 100%;
-    grid-template-columns: 50% 120px;
+    grid-template-columns: 70% 30%;
     align-items: start;
     justify-content: space-between;
 }
 
-.light{
+.blanc{
+    background-color: #FFFFFF;
+    color: black;
+
     display: grid;
     width: 100%;
-    grid-template-columns: 50% 120px;
+    grid-template-columns: 70% 30%;
     align-items: start;
     justify-content: space-between;
 }
 
-.light div{
+
+.contenu {
+    max-width: 1500px;
+    width: 100%;
+    margin: 50px auto 0 auto;
+
     display: flex;
-}
-
-.light img{
-    align-self: flex-end;
-}
-
-.noir div{
-    display: flex;
-}
-
-.noir img{
-    align-self: flex-end;
-}
-
-/* Temporaire */
-.rose div{
-    border: 1px solid black;
-}
-
-.noir div{
-    border: 1px solid red;
+    justify-content: center;
+    flex-basis: auto;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
 }
 
