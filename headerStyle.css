@@ -8,8 +8,10 @@ a{
 
 header{
     display: flex;
-    align-items: center;
     height: 80px;
+    align-items: center;
+    background-color: black;
+    font-family : "Gill sans"
 }
 
 .nav_header{
@@ -37,14 +39,6 @@ header>img{
     justify-content: space-between;
     width: 100%;
     align-items: center;
-    position:fixed;
-    background-color: black;
-    height: 80px;
-    z-index: 2;
-}
-
-.switch{
-    margin-right: 25px;
 }
 
 .switch {
@@ -52,7 +46,8 @@ header>img{
     display: inline-block;
     width: 60px;
     height: 34px;
-  }
+    margin-right: 25px;
+}
   
 .switch input {
     opacity: 0;
@@ -103,4 +98,3 @@ input:checked + .slider:before {
 }
 
 .pan>a{padding-right: 5px;}
-
