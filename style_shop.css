@@ -100,7 +100,7 @@ input:checked + .slider:before {
 
 
 
-.bouton-cat{
+#darkshop .bouton-cat{
     display: flex;
     background-color: #FE277E;
     box-shadow: #47EAD0 0 0 4px 2px;
@@ -111,9 +111,41 @@ input:checked + .slider:before {
     border-radius: 15px;
     justify-content: center;
     margin: auto;
-    margin-top: 20px;
+    margin-top: 30px;
 
 }
+#darkshop .bouton-cat:hover{
+    background-color: #47EAD0;
+    color: #FE277E;
+    box-shadow: #FE277E 0 0 4px 2px;
+
+    
+
+}
+
+
+#lightshop .bouton-cat{
+    display: flex;
+    background-color: #7f7b7c;
+    box-shadow: #000000 0 0 4px 2px;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    border-radius: 15px;
+    justify-content: center;
+    margin: auto;
+    margin-top: 30px;
+
+}
+#lightshop .bouton-cat:hover{
+    background-color: #4b4b4b;
+    color: #ffffff;
+    box-shadow: #7f7b7c 0 0 4px 2px;
+
+}
+
+
 
 #lightshop{
     display: flex;
@@ -122,6 +154,10 @@ input:checked + .slider:before {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background: #ffffff;
+    padding-bottom: 20px;
+    padding-top: 20px;
+
 }
 
 #darkshop{
@@ -131,18 +167,20 @@ input:checked + .slider:before {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background: linear-gradient(rgb(94, 94, 94), black);
+    padding-top: 20px;
+    padding-bottom: 20px;
+
 }
 
-
-body{
-    background-color: #0C0F0A;
-}
 
 
 .titre h1{
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 10px;
+    font-size: 100px;
+    font-family: "Bebas Neue";
 
 
 }
@@ -161,6 +199,9 @@ h3{
     display: flex;
     justify-content: center;
     margin-top: 10px;
+    font-size: 60px;
+    font-family: "Roboto";
+
 
 
 }
@@ -170,6 +211,7 @@ h3{
 .titre{
     background-color: azure;
     color: rgb(23, 14, 33);
+    height: 70vh;
 }
 
 
@@ -185,7 +227,33 @@ h3{
     display: none;
 }
 
-.article>img{
+
+#lightshop .article>img{
+    width: 80%;
+    margin: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 3px 1px #acacac; 
+    align-self: center;
+
+
+}
+
+#lightshop .article{
+    margin:50px;
+    box-shadow: 0 0 12px 8px #7c797a; 
+    background: #ccc;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 350px;
+    justify-content: center;
+    color : #030303;
+    border-radius: 15px;
+    
+}
+
+
+#darkshop .article>img{
     width: 80%;
     margin: 20px;
     border-radius: 15px;
@@ -195,7 +263,7 @@ h3{
 
 }
 
-.article{
+#darkshop .article{
     margin:50px;
     box-shadow: 0 0 12px 8px #FE277E; 
     display: flex;
@@ -207,11 +275,18 @@ h3{
     border-radius: 15px;
     
 }
-.article>button{
+.article>h2{
+    padding-left: 10px;
+}
+.article>p{
+    padding-left: 10px;
+}   
+
+#lightshop .article>button{
     margin-top: 10px;
     margin-bottom: 10px;
-    background-color: #47EAD0;
-    color: white;
+    background-color: #b7b7b7;
+    color: rgb(0, 0, 0);
     padding: 14px 20px;
     margin: 8px 0;
     border: none;
@@ -219,6 +294,31 @@ h3{
     border-radius: 15px;
     width: 50%;
     align-self: center;
+}
+#lightshop .article>button:hover{
+    background-color: #979797;
+    color: white;
+    box-shadow: #000000 0 0 4px 2px;
+}
+
+
+#darkshop .article>button{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #caf3ec;
+    color: #df9bb6;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    border-radius: 15px;
+    width: 50%;
+    align-self: center;
+}
+#darkshop .article>button:hover{
+    background-color: #47EAD0;
+    color: #FE277E;
+    box-shadow: #FE277E 0 0 4px 2px;
 }
 
 .categorie span {

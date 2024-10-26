@@ -2,6 +2,10 @@
     background: linear-gradient(rgb(94, 94, 94), black);
 }
 
+#darkshop h1{
+    color: aliceblue;
+}
+
 html{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
@@ -31,7 +35,7 @@ h3 a{
     font-size: 200%;
 }
 
-a:hover{
+h3 a:hover{
     background-color: #47Ead0;
 }
 
@@ -101,4 +105,16 @@ fieldset{
     text-align: justify;
 }
 
-/* TEMPORAIRE */
+
+
+/* RESPONSIVE */
+
+
+@media (max-width: 1000px){
+    .contenu img{
+        display: none;
+    }
+    fieldset{
+       columns: 2;
+    }
+}
