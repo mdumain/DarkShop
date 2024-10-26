@@ -1,5 +1,30 @@
-h2{
+h1{
     font-weight: bold;
+    font-family: "Bebas Neue";
+    text-align: center;
+    font-size: 1000%;
+
+    margin-bottom: 0;
+}
+
+h2{
+    font-family: "Roboto";
+    text-align: center;
+    font-size: 250%;
+}
+
+h3{
+    text-align: center;
+}
+
+h3 a{
+    font-family: "Roboto Mono";
+    color: black;
+    font-size: 200%;
+}
+
+a:hover{
+    background-color: #47Ead0;
 }
 
 .rose{
@@ -13,30 +38,55 @@ h2{
     justify-content: space-between;
 
     box-shadow: 2px 2px 2px 1px #Fe277e;
+
+    text-align: right;
+
+    padding: 2px;
 }
 
 .noir{
+    background-color: #47Ead0;
+    color: black;
+
     display: grid;
     width: 100%;
-    grid-template-columns: 50% 120px;
+    grid-template-columns: 70% 30%;
     align-items: start;
     justify-content: space-between;
+
+    padding: 2px;
 }
 
-.noir div{
+.blanc{
+    background-color: #FFFFFF;
+    color: black;
+
+    display: grid;
+    width: 100%;
+    grid-template-columns: 70% 30%;
+    align-items: start;
+    justify-content: space-between;
+
+    padding: 2px;
+}
+
+
+.contenu {
+    max-width: 1500px;
+    width: 100%;
+    margin: 50px auto 0 auto;
+
     display: flex;
+    justify-content: center;
+    flex-basis: auto;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
 }
 
-.noir img{
-    align-self: flex-end;
-}
+/* TEMPORAIRE */
 
-/* Temporaire */
-.rose div{
-    border: 1px solid black;
+{
+    border : 1px solid red;
 }
-
-.noir div{
-    border: 1px solid red;
-}
-
