@@ -1,10 +1,14 @@
+#darkshop{
+    background: linear-gradient(rgb(94, 94, 94), black);
+}
+
 h1{
     font-weight: bold;
     font-family: "Bebas Neue";
     text-align: center;
     font-size: 1000%;
 
-    margin-bottom: 0;
+    margin: 0;
 }
 
 h2{
@@ -83,6 +87,14 @@ a:hover{
     flex-direction: row;
     flex-wrap: wrap;
     gap: 30px;
+}
+
+#reseaux{
+    text-align: center;
+}
+
+fieldset{
+    text-align: justify;
 }
 
 /* TEMPORAIRE */
