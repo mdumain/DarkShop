@@ -1,9 +1,47 @@
+body{
+    margin: 0;
+}
+
 a{
     text-decoration: none;
 }
 
 header{
     display: flex;
+    height: 80px;
+    align-items: center;
+    background-color: black;
+}
+
+.nav_header{
+    margin-left: 40px;
+}
+
+.nav_header>a{
+    color: white;
+    padding: 10px;
+    background-color: purple;
+    border-radius: 50px;
+    margin-left: 15px;
+}
+
+.nav_header>a:hover{
+    background-color: rgba(128, 0, 128, 0.497);
+}
+
+header>img{
+    height: 100%;
+}
+
+.head{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.switch{
+    margin-right: 25px;
 }
 
 .switch {
@@ -53,11 +91,4 @@ input:checked + .slider:before {
     -ms-transform: translateX(26px);
     transform: translateX(26px);
 }
-
-
-
-
-
-
-
 

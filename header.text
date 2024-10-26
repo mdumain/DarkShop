@@ -1,21 +1,70 @@
-<header>
-        <label class="switch">
-            <input type="checkbox">
-            <span class="slider"></span>
-        </label>
+    <header>
+        <img src="logods.png" alt="le logo">
+        <div class="head">
+            <nav class="nav_header">
+                <a href="index.html">Accueil</a>
+                <a href="boutique.html">Boutique</a>
+                <a href="aPropos.html">A propos</a>
+            </nav>
+            <label class="switch">
+                <input type="checkbox" id="dark">
+                <span class="slider"></span>
+            </label>
+        </div>
         
-        <img src="" alt="le logo">
-        <nav>
-            <a href="index.html">Accueil</a>
-            <a href="boutique.html">Boutique</a>
-            <a href="aPropos.html">A propos</a>
-        </nav>
-       <a href=""><img src="" alt="Panier"></a>
-</header>
+
+
+    </header>
 
 
 
 SYTLE CSS : 
+
+body{
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+header{
+    display: flex;
+    height: 80px;
+    align-items: center;
+    background-color: black;
+}
+
+.nav_header{
+    margin-left: 40px;
+}
+
+.nav_header>a{
+    color: white;
+    padding: 10px;
+    background-color: purple;
+    border-radius: 50px;
+    margin-left: 15px;
+}
+
+.nav_header>a:hover{
+    background-color: rgba(128, 0, 128, 0.497);
+}
+
+header>img{
+    height: 100%;
+}
+
+.head{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.switch{
+    margin-right: 25px;
+}
 
 .switch {
     position: relative;
@@ -64,3 +113,5 @@ input:checked + .slider:before {
     -ms-transform: translateX(26px);
     transform: translateX(26px);
 }
+
+
