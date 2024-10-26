@@ -147,8 +147,8 @@ section{
 
 .bas{
     display: flex;
-    margin-left: 10%;
-    margin-right: 10%;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 h1{
@@ -175,24 +175,28 @@ h3{
 .gauchel{
     display: flex;
     align-items: center;
-    width: 70%;
+    width: 60%;
+    min-width: min-content;
     background-color: rgba(199, 199, 199, 0.538);
     margin-right: 15px;
     height: fit-content;
     padding: 10px;
     flex-direction: column;
+    margin-bottom: 5px;
 }
 
 .gauched{
     display: flex;
     align-items: center;
-    width: 70%;
+    width: 60%;
+    min-width: min-content;
     background-color: rgba(199, 199, 199, 0.538);
     margin-right: 15px;
     height: fit-content;
     padding: 10px;
     flex-direction: column;
     border: solid, yellow;
+    margin-bottom: 5px;
 }
 
 .ttre{
@@ -204,7 +208,8 @@ h3{
     flex-direction: column;     
     display: flex;
     margin-left: 15px;
-    width: 30%;
+    width: 20%;
+    min-width: max-content;
     max-width: 30%;
     background-color: #c3c3c3;
     height: min-content;
@@ -216,7 +221,8 @@ h3{
     display: flex;
     margin-left: 15px;
     border: solid, yellow;
-    width: 30%;
+    width: 20%;
+    min-width: max-content;
     max-width: 30%;
     background-color: #fe277e;
     height: min-content;
