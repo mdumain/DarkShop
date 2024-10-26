@@ -2,6 +2,10 @@
     background: linear-gradient(rgb(94, 94, 94), black);
 }
 
+html{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
 h1{
     font-weight: bold;
     font-family: "Bebas Neue";
