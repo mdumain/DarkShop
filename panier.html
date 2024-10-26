@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <title>Document</title>
     <link rel="stylesheet" href="panier.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -24,38 +27,39 @@
 
     </header>
     <section id="lightshop">
-        <section class="ligne">
+        <h1 id="l">PANIER</h1>
+        <section class="lignel">
             <div class="part">
-                <span class="z1">
+                <span class="z1l">
                     1
                 </span>
                 <p>Panier</p>
             </div>
             <div class="part">
-                <span class="z2">
+                <span class="z2l">
                     2
                 </span>
                 <p>Livraison</p>
             </div>
             <div class="part">
-                <span class="z1">
+                <span class="z1l">
                     3
                 </span>
                 <p>Paiement</p>
             </div>
             <div class="part">
-                <span class="z2">
+                <span class="z2l">
                     4
                 </span>
                 <p>Confirmation</p>
             </div>
         </section>
         <section class="bas">
-            <div class="gauche">
+            <div class="gauchel">
                 <img src="triste-removebg-preview.png" alt="bonhomme triste" class="triste">
                 <span>Le panier est vide</span>
             </div>
-            <div class="droite">
+            <div class="droitel">
                 <span class="ttre">Récapitulatif</span>
                 <div class="prix">
                     <span>prix panier</span>
@@ -83,7 +87,8 @@
         </section>
     </section>
     <section id="darkshop">
-        <section class="ligne">
+        <h1 id="d">PANIER</h1>
+        <section class="ligned">
             <div class="part">
                 <span class="z1">
                     1
@@ -110,10 +115,9 @@
             </div>
         </section>
         <section class="bas">
-            <div class="gauche">
-                <h2>panier</h2>
+            <div class="gauched">
                 <div class="exopack">
-                    <span class="packtitle">Pack exotique</span>
+                    <h3 class="packtitle">Pack exotique</h3>
                     <div class="article">
                         <img src="aylan.jpg" alt="image aylan" class="img_art">
                         <div class="desc">
@@ -140,9 +144,10 @@
                     <span>Dans le pack exotique, recevez 1 oscar gratuitement</span>
                     <span class="Prixpack">Prix pack : 5000€</span>
                 </div>
-                <h3>extras</h3>
+                <h2>extras</h2>
                 <div class="extra">
-                    <div class="article">
+                    <h3>Avec votre pack exotique : </h3>
+                    <div class="articleext">
                         <img src="oscar.jpg" alt="image oscar" class="img_art">
                         <div class="desc">
                             <span>description :</span>
@@ -155,7 +160,7 @@
                     </div>
                 </div>
             </div>
-            <div class="droite">
+            <div class="droited">
                 <span class="ttre">Récapitulatif</span>
                 <div class="prix">
                     <span>prix panier</span>
@@ -171,14 +176,14 @@
                 </div>
                 <div class="code">
                     <textarea name="code promo" id="cp" placeholder="code promo"></textarea>
-                    <a href="#" class="valcode">OK</a>
+                    <a href="#" class="valcoded">OK</a>
                 </div>
                 <hr>
                 <div class="prix">
                     <span class="tt">TOTAL</span>
                     <span>5015€</span>
                 </div>
-                <a href="#" class="valpanier">Valider le panier</a>
+                <a href="#" class="valpanierd">Valider le panier</a>
             </div>
         </section>
     </section>

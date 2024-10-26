@@ -1,12 +1,10 @@
-
-
 .triste{
     height: 150px;
     width: 150px;
 }
 
 .article{
-    background-color: #70707017;
+    background-color: #545454ae;
     width: 98%;
     margin-bottom: 5px;
     display: flex;
@@ -14,17 +12,31 @@
     align-items: center;
 }
 
+.articleext{
+    background-color: #545454ae;
+    width: 98%;
+    margin: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
 .extra{
-    background-color: #70707017;
+    background-color: #545454ae;
     width: 98%;
     margin-bottom: 5px;    
+    border: solid, yellow;
 }
 
 #lightshop{
     display: block;
+    background-color: cornflowerblue;
+    height: 100%;
 }
 
-
+#darkshop{
+    background: linear-gradient(rgb(94, 94, 94), black);
+}
 
 section{
     display: flex;
@@ -41,13 +53,35 @@ section{
     z-index: 1;
 }
 
+.z1l{
+    z-index: 0;
+}
+
+.z2l{
+    z-index: 1;
+}
+
 .part{
     height: 25%;
 }
 
 .z1, .z2{
     background-color: transparent;
-    color: #c3c3c3;
+    color: #fe277e;
+    border: .2rem solid #fe277e;
+    border-radius: 50%;
+    display: inline-block;
+    font-size: 1.8rem;
+    font-weight: 900;
+    height: 3rem;
+    line-height: 1.6;
+    position: relative;
+    width: 3rem;
+}
+
+.z1l, .z2l{
+    background-color: transparent;
+    color: #e4e4e4;
     border: .2rem solid #e4e4e4;
     border-radius: 50%;
     display: inline-block;
@@ -60,6 +94,15 @@ section{
 }
 
 .z1::after,.z1::before,.z2::after, .z2::before{
+    background-color: #fe277e;
+    content: "";
+    height: .2rem;
+    position: absolute;
+    top: 50%;
+    width: 300%;
+}
+
+.z1l::after,.z1l::before,.z2l::after, .z2l::before{
     background-color: #e4e4e4;
     content: "";
     height: .2rem;
@@ -68,7 +111,14 @@ section{
     width: 300%;
 }
 
-.ligne {
+.ligned {
+    margin-top: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
+    height: 60%;
+}
+
+.lignel {
     margin-top: 10px;
     margin-left: 10%;
     margin-right: 10%;
@@ -83,6 +133,14 @@ section{
     left: 3rem;
 }
 
+.z1l::before, .z2l::before{
+    right: 3rem;
+}
+
+.z1l::after, .z2l::after{
+    left: 3rem;
+}
+
 ::after,::before{
     box-sizing: inherit;
 }
@@ -93,7 +151,28 @@ section{
     margin-right: 10%;
 }
 
-.gauche{
+h1{
+    font-family: Bebas Neue;
+    font-size: xx-large;
+}
+
+h2{
+    font-family: Roboto;
+}
+
+h3{
+    font-family: Roboto;
+}
+
+#l{
+    color: #e4e4e4;
+}
+
+#d{
+    color: #fe277e;
+}
+
+.gauchel{
     display: flex;
     align-items: center;
     width: 70%;
@@ -104,11 +183,23 @@ section{
     flex-direction: column;
 }
 
+.gauched{
+    display: flex;
+    align-items: center;
+    width: 70%;
+    background-color: rgba(199, 199, 199, 0.538);
+    margin-right: 15px;
+    height: fit-content;
+    padding: 10px;
+    flex-direction: column;
+    border: solid, yellow;
+}
+
 .ttre{
     font-weight: bold;
 }
 
-.droite{
+.droitel{
     padding: 10px;
     flex-direction: column;     
     display: flex;
@@ -119,14 +210,33 @@ section{
     height: min-content;
 }
 
+.droited{
+    padding: 10px;
+    flex-direction: column;     
+    display: flex;
+    margin-left: 15px;
+    border: solid, yellow;
+    width: 30%;
+    max-width: 30%;
+    background-color: #fe277e;
+    height: min-content;
+}
+
 hr{
     width: 100%;
+}
+
+.valpanierd{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgba(152, 105, 105, 0.558);
+    color: black;
 }
 
 .valpanier{
     padding-top: 10px;
     padding-bottom: 10px;
-    background-color: rgba(128, 128, 128, 0.411);
+    background-color: rgba(128, 127, 127, 0.438);
     color: black;
 }
 
@@ -137,15 +247,30 @@ hr{
     margin-bottom: 2.5px;
 }
 
+.valpanierd:hover{
+    background-color: #707070;
+}
+
 .valpanier:hover{
     background-color: #707070;
 }
 
-.valcode{
+.valcoded{
     color: black;
-    background-color: rgba(128, 128, 128, 0.411);
+    background-color: rgba(152, 105, 105, 0.558);
     width: 10%;
     padding: 3px;
+}
+
+.valcode{
+    color: black;
+    background-color: rgba(128, 127, 127, 0.438);
+    width: 10%;
+    padding: 3px;
+}
+
+.valcoded:hover{
+    background-color: #707070;
 }
 
 .valcode:hover{
@@ -176,13 +301,22 @@ hr{
     font-weight: bold;
 }
 
+span {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;    
+}
+
+a{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
 .exopack{
-    background-color: #7070703d;
+    background-color: #545454ae;
     width: 98%;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-bottom: 10px;
+    border: solid, yellow;
 }
 
 .packtitle{
