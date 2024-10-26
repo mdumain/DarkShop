@@ -2,24 +2,30 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style_shop.css">
     <title>DarkShop</title>
 </head>
 <body>
     <header>
-        <label class="switch">
-            <input type="checkbox" id="dark">
-            <span class="slider"></span>
-        </label>
+        <img src="logods.png" alt="le logo">
+        <div class="head">
+            <nav class="nav_header">
+                <a href="index.html">Accueil</a>
+                <a href="boutique.html">Boutique</a>
+                <a href="aPropos.html">A propos</a>
+            </nav>
+            <label class="switch">
+                <input type="checkbox" id="dark">
+                <span class="slider"></span>
+            </label>
+        </div>
         
-        <img src="" alt="le logo">
-        <nav>
-            <a href="index.html">Accueil</a>
-            <a href="boutique.html">Boutique</a>
-            <a href="aPropos.html">A propos</a>
-        </nav>
-       <a href="panier.html"><img src="" alt="Panier"></a>
+
+
     </header>
 
 
@@ -29,8 +35,9 @@
     <h4>L'e-shop numéro 1 du marché</h4> </section>
 
     <section id="lightshop">
-        <h3>Figurine</h3>
-        <div id="figurine" class="categorie">
+        <button class="bouton-cat" onclick="toggleCategory('figurine')">Figurine</button>
+
+        <div id="figurine" class="categorie hidden" >
             <div class="article">
                 <img src="https://touteladeco.com/cdn/shop/files/S96643e4cc4a14f96a1638222c83bf5f5P_480x.webp?v=1713527792" alt="figurine">
                 <h2>Figurine</h2>
@@ -50,40 +57,48 @@
 
         </div>
         
-        <h3>Bonbon</h3>
+        <button class="bouton-cat" onclick="toggleCategory('bonbon')">Bonbon</button>
 
-        <div id="bonbon" class="categorie">
 
-        </div>
-        <h3>Nettoyage</h3>
-        <div id="nettoyage" class="categorie">
+        <div id="bonbon" class="categorie hidden" >
 
         </div>
-        <h3>Jeux</h3>
-        <div id="jouet" class="categorie">
+        <button class="bouton-cat" onclick="toggleCategory('nettoyage')">Nettoyage</button>
+
+        <div id="nettoyage" class="categorie hidden" >
 
         </div>
-        <h3>Mode</h3>
-        <div id="queue" class="categorie">
+        <button class="bouton-cat" onclick="toggleCategory('jouet')">Jouet</button>
+
+        <div id="jouet" class="categorie hidden" >
 
         </div>
-        <h3>Pokemon</h3>
-        <div id="pokemon" class="categorie">
+        <button class="bouton-cat" onclick="toggleCategory('queue')">Queue</button>
+
+        <div id="queue" class="categorie hidden" >
 
         </div>
-        <h3>Voyage</h3>
-        <div id="voyage" class="categorie">
+        <button class="bouton-cat" onclick="toggleCategory('pokemon')">Pokemon</button>
+
+        <div id="pokemon" class="categorie hidden" >
 
         </div>
-        <h3>Programmation</h3>
-        <div id="programmation" class="categorie">
+        <button class="bouton-cat" onclick="toggleCategory('voyage')">Voyage</button>
+
+        <div id="voyage" class="categorie hidden" >
+
+        </div>
+        <button class="bouton-cat" onclick="toggleCategory('programmation')">Programmation</button>
+
+        <div id="programmation" class="categorie hidden" >
 
         </div>
     </section>
 
     <section id="darkshop">
-        <h3>Humain</h3>
-        <div id="humain" class="categorie">
+        
+        <button class="bouton-cat" onclick="toggleCategory('humain')">Humain</button>
+        <div id="humain" class="categorie hidden" >
                 <div class="article">
                     <img src="johan.jpg" alt="johan">
                     <h2>Johan</h2>
@@ -118,34 +133,40 @@
 
 
 
+        </div>
+        <button class="bouton-cat" onclick="toggleCategory('drogue')">Drogue</button>
+
+        <div id="drogue" class="categorie hidden" >
 
         </div>
-        <h3>Drogue</h3>
-        <div id="drogue" class="categorie">
+        <button class="bouton-cat" onclick="toggleCategory('tueurgage')">Tueur à Gage</button>
+
+        <div id="tueurgage" class="categorie hidden" >
 
         </div>
-        <h3>Tueur</h3>
-        <div id="tueurgage" class="categorie">
+        <button class="bouton-cat" onclick="toggleCategory('arme')">Arme</button>
+
+        <div id="arme" class="categorie hidden" >
 
         </div>
-        <h3>Arme</h3>
-        <div id="arme" class="categorie">
+        <button class="bouton-cat" onclick="toggleCategory('stalk')">Stalking</button>
+
+        <div id="stalk" class="categorie hidden" >
 
         </div>
-        <h3>Stalk</h3>
-        <div id="stalk" class="categorie">
+        <button class="bouton-cat" onclick="toggleCategory('identite')">Pièce d'identité</button>
+
+        <div id="identite" class="categorie hidden" >
 
         </div>
-        <h3>Identité</h3>
-        <div id="identite" class="categorie">
+        <button class="bouton-cat" onclick="toggleCategory('disparition')">Disparition</button>
+
+        <div id="disparition" class="categorie hidden" >
 
         </div>
-        <h3>Disparition</h3>
-        <div id="disparition" class="categorie">
+        <button class="bouton-cat" onclick="toggleCategory('hack')">Hacking</button>
 
-        </div>
-        <h3>Hack</h3>
-        <div id="hack" class="categorie">
+        <div id="hack" class="categorie hidden" >
             
         </div>
     </section>
@@ -165,6 +186,7 @@
                 lightshopSection.style.display = 'block'; 
             }
         });
+
         darkshopSection.style.display = 'none';
 
     </script>
