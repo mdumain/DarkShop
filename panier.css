@@ -278,6 +278,7 @@ header>img{
 .slider {
     position: absolute;
     cursor: pointer;
+    border-radius: 50px;
     top: 0;
     left: 0;
     right: 0;
@@ -289,6 +290,7 @@ header>img{
   
 .slider:before {
     position: absolute;
+    border-radius: 50px;
     content: "";
     height: 26px;
     width: 26px;
@@ -300,7 +302,7 @@ header>img{
 }
   
 input:checked + .slider {
-    background-color: #2196F3;
+    background-color: purple;
 }
   
 
