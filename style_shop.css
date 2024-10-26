@@ -1,4 +1,51 @@
 
+body{
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+header{
+    display: flex;
+    height: 80px;
+    align-items: center;
+    background-color: black;
+    font-family : "Gill sans"
+}
+
+.nav_header{
+    margin-left: 40px;
+}
+
+.nav_header>a{
+    color: white;
+    padding: 10px;
+    background-color: purple;
+    border-radius: 50px;
+    margin-left: 15px;
+}
+
+.nav_header>a:hover{
+    background-color: rgba(128, 0, 128, 0.497);
+}
+
+header>img{
+    height: 100%;
+}
+
+.head{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.switch{
+    margin-right: 25px;
+}
+
 .switch {
     position: relative;
     display: inline-block;
@@ -53,6 +100,43 @@ input:checked + .slider:before {
 
 
 
+.bouton-cat{
+    display: flex;
+    background-color: #FE277E;
+    box-shadow: #47EAD0 0 0 4px 2px;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    border-radius: 15px;
+    justify-content: center;
+    margin: auto;
+    margin-top: 20px;
+
+}
+
+#lightshop{
+    display: flex;
+    background-color: #0C0F0A;
+    color: white;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#darkshop{
+    display: flex;
+    background-color: #0C0F0A;
+    color: white;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+body{
+    background-color: #0C0F0A;
+}
 
 
 .titre h1{
@@ -67,6 +151,10 @@ h3{
     display: flex;
     justify-content: center;
     background-color: rgb(127, 127, 127);
+    width: fit-content;
+    margin: auto;
+    padding: 5px;
+    border-radius: 15px;
 }
 
 .titre h4{
@@ -76,6 +164,8 @@ h3{
 
 
 }
+
+
 
 .titre{
     background-color: azure;
@@ -90,31 +180,45 @@ h3{
     margin-top: 20px;
     flex-direction: row;
 }
+
+.hidden{
+    display: none;
+}
+
 .article>img{
-    width: 300px;
-    height: 200px;
+    width: 80%;
+    margin: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 3px 1px #FE277E; 
+    align-self: center;
+
+
 }
 
 .article{
     margin:50px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 12px 8px #FE277E; 
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     width: 350px;
     justify-content: center;
+    color : #FCFE19;
+    border-radius: 15px;
     
 }
 .article>button{
     margin-top: 10px;
     margin-bottom: 10px;
-    background-color: #4CAF50;
+    background-color: #47EAD0;
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
     border: none;
     cursor: pointer;
-    width: 100%;
+    border-radius: 15px;
+    width: 50%;
+    align-self: center;
 }
 
 .categorie span {
@@ -125,16 +229,3 @@ h3{
     font-weight: bold;
 }
 
-#humain img {
-    height : 500px;
-}
-button {
-    background-color: #4CAF50;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    cursor: pointer;
-    border-radius: 15px;
-
-}
