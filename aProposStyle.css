@@ -55,7 +55,7 @@ p{
 
     box-shadow: 2px 2px 2px 1px #Fe277e;
 
-    text-align: right;
+    text-align: center;
 
     padding: 2px;
 }
@@ -70,7 +70,7 @@ p{
     align-items: start;
     justify-content: space-between;
 
-    text-align: right;
+    text-align: center;
 
     padding: 2px;
 }
@@ -85,6 +85,8 @@ p{
     align-items: start;
     justify-content: space-between;
 
+    text-align: center;
+    
     padding: 2px;
 }
 
@@ -98,7 +100,13 @@ p{
     align-items: start;
     justify-content: space-between;
 
+    text-align: center;
+
     padding: 2px;
+}
+
+.contenu p:not(fieldset p){
+    margin-top: 15%;
 }
 
 
@@ -120,8 +128,16 @@ p{
     text-align: center;
 }
 
+#happy_guy{
+    margin-right: 130px;
+}
+
 fieldset{
     text-align: justify;
+}
+
+fieldset>img{
+    align-items: flex-end;
 }
 
 
